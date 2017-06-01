@@ -5,38 +5,48 @@ html, body {
   width: 100%;
   height: 100%;
   line-height: 1.5;
-  background-color: #efefef;
+  background-color: #1E1E20;
+  color: white;
 }
 
-/* Nav bar */
-nav {
-  position: fixed;
-  height: 100%;
+.container {
   padding: 0;
   margin: 0;
-  width: 20%;
-  background-color: #30415d;
+  width: 80%;
+  margin: auto;
+}
+/* Nav bar */
+nav {
+
+  height: 10%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #2A2C2B;
+  border-bottom: 2px solid #DC3522;
 }
 
 nav .logo {
-  text-align: center;
+  float: left;
   font-size: 35px;
   color: white;
-  padding-top: 40px;
+  margin-top: 25px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #B56357;
 }
 nav ul {
+  float: right;
   padding: 0;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 10px;
   list-style-type: none;
   text-align: center;
 }
 
 nav ul li {
+  display: inline-block;
   text-align: center;
-  margin-top: 40px;
+  padding-left: 40px;
+  margin-top: 20px;
 }
 
 nav ul li a {
@@ -46,39 +56,136 @@ nav ul li a {
   font-family: 'Monda', sans-serif;
 }
 
+nav .container .nav-search {
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 4%;
+}
+
+nav .container .nav-search  form input {
+  height: 40%;
+  width: 450px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid #DC3522;
+  border-radius: 10px;
+}
+
+nav .container .nav-search form button {
+  background-color: #DC3522;
+  color: white;
+  height: 39px;
+  width: 100px;
+  margin-left: -20px;
+  border: none;
+}
+
 /* Profile Header */
-
-.container {
-  width: 80%;
-  float: right;
-  display: block;
-}
-
-.container .profile-header {
-  width: 95%;
-  padding-top: 2%;
-  margin: auto;
-}
-
-.container .profile-header img {
+.container .profile-block {
   padding: 0;
   margin: 0;
-  display: inline-block;
-  border: 3px solid #B56357;
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #2A2C2B;
 }
 
-.container .profile-header h1 {
-  padding: 0;
+.container .profile-block h1 {
+  padding: 0px;
   padding-left: 30px;
-  margin: 0;
-  display: inline-block;
+  margin: 0px;
+  margin-top: 30px;
+  line-height: 0;
+  text-align: left;
+  color: white;
   font-size: 100px;
   font-family: 'Baloo Bhaina', cursive;
+  background-color: green;
 }
 
-.container .profile-header p {
+.container .profile-block .level-container {
+  text-align: right;
+  float: right;
+}
+.container .profile-block .level {
+  padding: 0;
+  margin: 0;
   display: inline-block;
-  color: #aaa;
   font-size: 20px;
   padding-left: 20px;
+}
+
+
+.container .profile-header .rank-tier {
+  font-size: 45px;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: "Arial";
+}
+
+/* Ranked Block */
+.container .ranked-block {
+  display: inline-block;
+  width: 17%;
+  margin-top: 20px;
+  background-color: #2A2C2B;
+  text-align: center;
+  line-height: 0.7;
+}
+
+.container .ranked-block .soloq {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.container .ranked-block img {
+  width: 50%;
+  display: inline-block;
+}
+
+.container .ranked-block .ranked-info {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: right;
+  color: white;
+}
+
+.container .ranked-block .ranked-info .league-points {
+  color: green;
+}
+
+/*Match History*/
+.match-history-container {
+  width: 82%;
+  float: right;
+  margin: auto;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #2A2C2B;
+}
+
+.match-history-container .match-history-block {
+  border-bottom: 2px solid #DC3522;
+}
+
+.match-history-container .match-history-block .champion-icon {
+  display: inline-block;
+}
+
+.match-history-container .match-history-block p {
+  display: inline-block;
+}
+
+/* CHART(S) */
+.container canvas {
+  display: inline-block;
+  float: right;
+  background-color: red;
 }

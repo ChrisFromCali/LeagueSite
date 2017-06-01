@@ -1,13 +1,15 @@
-var winRateCh = document.getElementById("win-rate-chart");
+
+var winRateCh = document.getElementById("win-rate-chart").getContext("2d");
 var winRateChart = new Chart(winRateCh, {
-  type: 'pie',
-  data = {
+  type: 'doughnut',
+  data:{
     datasets: [{
-      data: [84, 68]
+      data: [131, 118]
     }],
+
     labels: [
-      'wins',
-      'Losses'
+      "wins",
+      "losses"
     ],
-}
+  }
 });

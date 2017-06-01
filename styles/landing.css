@@ -52,6 +52,7 @@ html, body {
   color: white;
   background-color: black;
   border: none;
-  height: 35px;
+  height: 43px;
   width: 100px;
+  margin-left: -22px;
 }
